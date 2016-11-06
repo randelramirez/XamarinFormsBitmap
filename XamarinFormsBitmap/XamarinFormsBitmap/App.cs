@@ -13,7 +13,8 @@ namespace XamarinFormsBitmap
         {
             //MainPage = new WebBitmapCodePage();
             //MainPage = new WebBitmapXaml();
-            MainPage = new ResourceBitmapCodePage();
+            //MainPage = new ResourceBitmapCodePage();
+            MainPage = new ResourceBitmapXamlPage();
         }
 
         protected override void OnStart()

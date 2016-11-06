@@ -9,7 +9,17 @@
            VerticalOptions="CenterAndExpand"
            HorizontalOptions="Center" />
 
-    <Image Source="{local:ImageResource StackedBitmap.Images.Sculpture_320x240.jpg}"
+    <!--If the Image element is not constrained in any way, it will fill its container while maintaining the bit-map’s aspect ratio, 
+    or fill the area entirely if you set the Aspect property to Fill or AspectFill.-->
+    <!--If the bitmap is less than the size of its container and the Image is constrained horizontally or vertically by setting 
+    HorizontalOptions or VerticalOptions to something other than Fill, or if the Image is put in a StackLayout, 
+    the bitmap is displayed in its natural size. That’s the pixel size on iOS and Android devices, 
+    but the size in device-independent units on Windows devices.-->
+    
+    <!--The local prefix refers to the XamarinFormsBitmap namespace in the XamarinFormsBitmap assembly-->
+    <!--If you prefer that the size of the Image element be the same size as the rendered bitmap in device-independent units, 
+    you can set the HorizontalOptions property of the Image to something other than the default value of Fill-->
+    <Image Source="{local:ImageResource XamarinFormsBitmap.Images.Sculpture_320x240.jpg}"
            BackgroundColor="Aqua"
            SizeChanged="OnImageSizeChanged" />
 
