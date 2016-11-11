@@ -9,7 +9,7 @@
            VerticalOptions="CenterAndExpand"
            HorizontalOptions="Center" />
 
-    <!--If the Image element is not constrained in any way, it will fill its container while maintaining the bit-map’s aspect ratio, 
+    <!--If the Image element is not constrained in any way, it will fill its container while maintaining the bitmap’s aspect ratio, 
     or fill the area entirely if you set the Aspect property to Fill or AspectFill.-->
     <!--If the bitmap is less than the size of its container and the Image is constrained horizontally or vertically by setting 
     HorizontalOptions or VerticalOptions to something other than Fill, or if the Image is put in a StackLayout, 
